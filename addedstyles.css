@@ -1,0 +1,25 @@
+.row-grey{
+  background-color: lightgrey;
+}
+
+/* navbar */
+.container-fluid {
+display: flex;
+height: 100%;
+}
+
+/* image background */
+#imageonly {
+  background-image: url('backgroundimage.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+#linear-gradient {
+  background: linear-gradient(black, white);
+}
+
+.featured-btns button:last-child{
+  background: rgb(102, 163, 243);
+  color: white;
+  border-color: var(--pacificBlue);

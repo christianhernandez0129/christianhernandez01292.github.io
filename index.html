@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="addedstyles.css">
+    <title>Christian's Portfolio</title>
+
+<style>
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+</style>
+</head>
+
+<body> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" position: fixed; top = 0>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="#navbarResponsive">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="myUL">
+                  <li><a class="dropdown-item" href="#projects">Pacman</a></li>
+                  <li><a class="dropdown-item" href="#projects">Eyes</a></li>
+                  <li><a class="dropdown-item" href="#projects">Real time bus tracker</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search for project" aria-label="Search" title="Type in a name" id="myInput" onkeyup="myFunction()">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+
+    <div class="container" id="imageonly" id="linear-gradient">
+           
+        <div id="linear-gradient"></div>
+
+        <div class="row">
+            <div class="col-lg text-center">
+                <p></p>
+                <h1>Christian Hernandez</h1>
+                <a name="home"></a>
+            </div>
+        </div>
+
+        <section id="about" class="download-section content-section text-center"> 
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm text-center">
+                <img src="githubpic.jpg" class="img-fluid rounded-circle" alt="Christian's Head" height="150px"
+                    width="150px">
+    
+            </div>
+
+            <div class="col-sm text-center">
+                <iframe width="150" height="150" class="img-fluid rounded-circle" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+            </div>
+            <div class="col-sm"></div>
+        </div>
+   
+        </section>
+
+        <section id="contact" class="content-section text-center">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm text-center">
+                    <hr>
+                   
+                    <p> </p> 
+                    <p> </p> 
+                    <a target="_blank" href="https://github.com/christianhernandez0129">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg></a>
+                  
+                    <p> </p> 
+                </div>
+                <div class="col-sm"></div>
+            </div>
+            <hr>
+        
+        </section>
+    </div>
+
+        <div class="row">
+        <hr>
+        <div class="col-sm text-center"> 
+            
+            <a target="_blank" href="https://github.com/christianhernandez0129/Pac-Man-Exercise-2.git">
+                <h4>PacMan Factory</h4>
+                <img src="PacMan1.png" class="img-fluid w-50 p-3 border" alt="PacMan Factory"> </img> 
+                <p></p>
+                <div class = "featured-btns">
+                    <button type = "button" class = "btn">GitHub Repo</button>
+                </div> 
+            </a>
+
+        <div class="col-sm text-center">
+            <a target="_blank" href="https://github.com/christianhernandez0129/Eye-Exercise.git">
+                <h4>Eyes Movement</h4>
+                <img src="Eyes.png" class="img-fluid w-50 p-3 border" alt="Eyes"> </img> 
+                <p></p>
+                <div class = "featured-btns">
+                    <button type = "button" class = "btn">GitHub Repo</button>
+                </div> 
+            </a>
+        
+        <div class="col-sm text-center">
+            <a target="_blank" href="https://github.com/christianhernandez0129/Real-Time-Bus-Tracker-Exercise.git">
+                <h4>Real Time Bus Tracker</h4>
+                <img src="Real Time Bus Tracker.png" class="img-fluid w-50 p-3 border" alt="Real Time Bus Tracker"> </img> 
+                <p></p>
+                <div class = "featured-btns">
+                    <button type = "button" class = "btn">GitHub Repo</button>
+                </div> 
+            </a>
+
+         </div>
+        </section>
+</body>
+</html>
